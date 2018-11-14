@@ -1,3 +1,7 @@
+## Intro
+
+This trivial example demonstrates how we can use a file with data in YAML format to produce a configuration file. Those of you who've been to my Ansible classes will recognize this as well as my use of the _figlet_ utility, one vastly more important and useful than the stupid _cowsay_ ...
+
 ## hostlist.yml
 
 ```yaml
