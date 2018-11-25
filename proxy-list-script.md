@@ -9,7 +9,7 @@ In this example, I show you how we can generate a proxy bash script to be stored
 #!/bin/bash
 
 export http_proxy={{ http_proxy }}
-export https_proxy={{ http_proxy }}
+export https_proxy={{ https_proxy }}
 {% if no_proxy is defined -%}
 export no_proxy={{ no_proxy | join(',')}}
 {%- endif %}
@@ -20,7 +20,7 @@ export no_proxy={{ no_proxy | join(',')}}
 
 ```yaml
 - name: apply my great playbook on my hosts
-  hosts: [a-bunch-of-host]
+  hosts: [a-bunch-of-hosts]
   become: true
   vars:
     http_proxy: http://httpproxyserver.something.com:3128
